@@ -250,6 +250,13 @@ h6 {
   border-radius: 10%;
 }
 
+.initial {
+  color: white; /* Text color */
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white; /* Reduced glow effect */
+}
+
+
+
 #hero:before {
   content: "";
   background: rgba(5, 13, 24, 0.3);
