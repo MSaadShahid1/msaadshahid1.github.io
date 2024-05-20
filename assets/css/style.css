@@ -243,7 +243,7 @@ h6 {
   height: 100vh;
   background: url("../img/newbg.JPEG") top center;
   background-size: cover;
-  filter: brightness(70%) contrast(100%);
+  /* filter: brightness(70%) contrast(100%); */
 }
 
 .img-fluid{
@@ -289,12 +289,39 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
+@keyframes rgbCycle {
+  0% {
+    color: #ff0000; /* Red */
+  }
+  16% {
+    color: #ff9900; /* Orange */
+  }
+  33% {
+    color: #ffff00; /* Yellow */
+  }
+  50% {
+    color: #00ff00; /* Green */
+  }
+  66% {
+    color: #00ffff; /* Cyan */
+  }
+  83% {
+    color: #0000ff; /* Blue */
+  }
+  100% {
+    color: #ff00ff; /* Magenta */
+  }
+}
+
 #hero p span {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
+  font-size: 40px;
+  animation: rgbCycle 5s infinite;
 }
+
 
 @media (min-width: 1024px) {
   #hero {
